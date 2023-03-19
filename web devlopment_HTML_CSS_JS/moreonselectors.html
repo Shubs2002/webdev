@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: bisque;
+        border: 2px solid greenyellow;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* div p {
+        color: greenyellow;
+        background-color: grey;
+    } */
+    div > p{
+        color: hotpink;
+        background-color: gray;
+    }
+    /* this means it will affect only to those para who are directly related to div not to subs eg in given code the para inside the ul and li  */
+    div + p{
+        color: rgb(255, 255, 255);
+        background-color: rgb(236, 138, 138);
+    }
+    /* this property means the paras who are past siblings of div   */
+
+
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is inside li</p></li>
+            </ul>
+            <p>THis is a para</p>
+        </div>
+        <p>this is another one</p>
+
+    </div>
+    <p>this is outermost one</p>
+    
+</body>
+</html>

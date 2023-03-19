@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 300px 150px; */
+            /* grid-template-columns: 300px auto 150px; the last element goes to the extreme right */
+            /* grid-template-columns: 1fr 4fr 1fr;this divides page in ratio 1:4:1 */
+            grid-template-columns: repeat(3,auto);/*this sets columns as 3 and width is divided equally among the items of grid*/
+            grid-gap: 2rem;
+
+        }
+        .item{
+            /* height: 100px; */
+            /* width: 100px; */
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is Item1</div>
+        <div class="item">this is Item2</div>
+        <div class="item">this is Item3</div>
+        <div class="item">this is Item4</div>
+        <div class="item">this is Item5</div>
+        <div class="item">this is Item6</div>
+        <div class="item">this is Item7</div>
+        <div class="item">this is Item8</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+        <div class="item">this is Item9</div>
+    </div>
+</body>
+</html>

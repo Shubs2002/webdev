@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            
+        }
+       #box-1{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border: 2px solid red;
+        background-color: red;
+        top: 49px;
+       }
+       #box-2{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+         background-color: blue;
+       }
+       #box-3{
+        width: 150px;
+        height: 150px;
+        border: 2px solid violet;
+        background-color: violet;
+       }#box-4{
+        width: 150px;
+        height: 150px;
+        border: 2px solid yellow;
+        background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #anime{
+      background-color: black;
+      width: 200px;
+      position: relative;
+      height: 200px;
+      animation-name: diag;
+      animation-duration: 5s;
+      top: 0px;
+      left: 0px;
+    }
+    @keyframes diag {
+      50%{
+        color: aqua;
+        transform: translateY(200px);
+        /* top: 100px; */
+        /* left: 0px; */
+      }
+      100%{
+        color: bisque;
+        /* top: 0px; */
+        /* left: 50px; */
+        /* transform: rotate(50deg); */
+        transform: translateX(200px)
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="anime">
+    hey
+  </div>
+
+</body>
+</html>

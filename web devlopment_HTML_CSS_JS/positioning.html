@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position in css: static(:default),relative,absolute,fixed,sticky */
+        .container {
+            background-color: seashell;
+            border: 2px solid red;
+            height: 3444px;
+        }
+
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+
+        }
+
+        #box0 {
+            position: static;
+        }
+
+        #box1 {
+            position: relative;
+            top: 34px;
+            left: 24px;
+        }
+
+        #box2 {
+            position: absolute;
+            top: 34px;
+            left: 34px;
+        }
+
+        #box3 {
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+        }
+
+        #box4 {
+            /* fixed position will not occupy any space in the body, so the next element(eg: an image) will be behind the fixed element. sticky position occupies the space, so the next element will not be hidden behind it */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box0"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

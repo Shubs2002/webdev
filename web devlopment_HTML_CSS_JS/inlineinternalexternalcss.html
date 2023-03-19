@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+    <!-- this is internal CSS inline CSS priority is high then internal -->
+    <style>
+        p{
+            color: palevioletred;
+            background-color: skyblue !important; 
+            /* !important marks this line as imp so all bg colors are skyblue of p  */
+        }
+    </style>
+    <!-- this is external css  -->
+    <link rel="stylesheet" href="fextencss.css">
+</head>
+<body>
+    <h3>first time CSS</h3>
+    <!-- this is Inline -->
+    <p style="color: crimson; background-color: aqua;">In this i will get everything about CSS</p>
+     <p>this is for testing Internal</p>
+</body>
+</html>

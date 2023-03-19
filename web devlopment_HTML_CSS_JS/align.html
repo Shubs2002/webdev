@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block and float</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 900px;
+        margin: auto;
+        border: 8px solid rgb(163, 203, 102);
+        border-radius: 12px;
+    }
+    .item{
+        border: 2px solid rgb(244, 42, 244);
+        margin: 10px 5px;
+        padding: 10px;
+        background: rgba(239, 191, 239, 0.392);
+    }
+    h3{
+        font-family: 'Rubik Moonrocks', cursive;
+        color: darkgreen;
+        text-align: center     ;
+    }
+    #fruit{
+        float: left;
+        width: 48%;
+    }
+    #Vegetables{
+        float: right;
+        width: 48%;
+
+    }
+    #masala{
+        clear: left;
+        /* float: left; */
+        /* width: 100%; */
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="fruit">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, iste, sint ea sequi id doloribus quia vel officia ex repellendus mollitia ut deserunt accusantium harum impedit exercitationem laudantium earum voluptas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero ea itaque ut quia asperiores, dolorem esse velit magnam explicabo aut quisquam quos illum necessitatibus at quis natus nisi maiores aliquam quod dicta amet.
+            </p>
+        </div>
+        <div class="item" id="Vegetables">
+            <h3>Vegetables</h3>
+            <p id="vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, iste, sint ea sequi id doloribus quia vel officia ex repellendus mollitia ut deserunt accusantium harum impedit exercitationem laudantium earum voluptas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro minus non repellat ut architecto commodi dolores, nemo quidem quos nostrum! Necessitatibus optio sapiente nisi cum labore quod ad pariatur eligendi? Dolore ab omnis perferendis!
+            </p>
+        </div>
+        <div class="item" id="masala">
+            <h3>masala</h3>
+            <p id="masalapara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, iste, sint ea sequi id doloribus quia vel officia ex repellendus mollitia ut deserunt accusantium harum impedit exercitationem laudantium earum voluptas?
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

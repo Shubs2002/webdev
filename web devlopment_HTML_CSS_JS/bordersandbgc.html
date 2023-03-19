@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders,backgrounds</title>
+    <style>
+      #firstpara{
+          background-color: salmon;
+          height: 100px;
+          width: 400px;
+          border: 2px dashed gold;
+          /* Or you can do this
+          border-width: 2px;
+           border-color: seagreen;
+          border-style: dashed; */
+          border-radius: 13px;
+
+      }
+      #secondpara{
+        background-color: salmon;
+          height: 100px;
+          width: 400px;
+         border-right: 2px solid rgb(241, 212, 47);
+         border-top: 2px solid rgb(32, 104, 32);
+         border-left:2px solid grey;
+         border-bottom: 2px dashed rgb(133, 82, 170);
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 11px;
+
+      }
+      #thirdpara{
+        height: 400px;
+          width: 700px;
+          background-image: url("https://www.industrialempathy.com/img/remote/ZiClJf-640w.avif");
+          border: 2px solid red;
+          background-repeat: no-repeat;/*repeat x will repeat imgs only in x dir same for y*/
+          background-position: center center;/*you ca also do 100px top or 200px bottom center left center bottom center right etc*/
+        
+      }
+    </style>
+</head>
+<body>
+    <h3>This is a heading
+    </h3>
+    <p id="firstpara"> This is para</p>
+    <h3> this is second head</h3>
+    <p id="secondpara">This is second para</p>
+    <h3>this is third head</h3>
+    <p id="thirdpara">This is third para</p>
+</body>
+</html>

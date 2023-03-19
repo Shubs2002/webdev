@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadowing</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        /* border: 2px solid red; */
+        padding: 23px 34px;
+        margin: 23px 12px;
+        background-color: bisque;
+        /* box-shadow: 5px 3px rgb(187, 177, 165);
+        box-shadow: -5px -3px rgb(187, 177, 165); */
+        /* box-shadow: 5px 3px 10px rgb(187, 177, 165); */
+        box-shadow: 5px 3px 10px 4px rgba(187, 177, 165, 0.849); 
+        /* this works as x,y,blur rad,spread rad */
+        box-shadow: inset 3px 5px 10px 4px  rgba(145, 243, 53, 0.849),3px 5px 10px 4px  rgba(226, 30, 30, 0.849);
+
+    }
+    .card h2{
+        text-shadow:5px 4px 2px rgb(168, 166, 166,0.52) ;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>The C++-Language</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, expedita aperiam! Mollitia repudiandae impedit natus repellendus ipsam optio, at iste odio placeat cupiditate ipsa officiis quibusdam. Magni dicta eveniet perspiciatis tempore possimus ratione aut!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>The C-Language</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum dolor tempora facere architecto iste labore amet laudantium ducimus nemo qui maxime est sunt vitae provident culpa voluptatibus atque adipisci, ab, facilis recusandae porro!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>JAVA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsum voluptate explicabo accusamus corporis vitae delectus maiores voluptates eaque iste assumenda culpa, ab nihil expedita veritatis facere necessitatibus minus sint inventore consectetur modi quasi.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Python</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque, consequatur voluptate dolores accusamus inventore asperiores doloremque nemo aliquid porro alias earum, explicabo esse ducimus. Vero cumque at illo autem quo modi perspiciatis odit!</p>
+        </div>
+    </div>
+</body>
+</html>

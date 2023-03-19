@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aliceblue; 
+    }  
+    .Navigation{
+        display: flex;
+        justify-content: center;
+
+    }
+    ul > li{
+        margin: 5px;
+        list-style-type: none;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    div.line{
+        border: 1.2px solid snow;
+        border-radius: 100%;
+    }
+</style>
+<body>
+    <header>
+         <nav class="navbar">
+            <ul class="Navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+         </nav>
+         <div class="line"></div>
+         <section>
+             <h2>Welcome to the World Of Coding</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique hic ipsa ex, mollitia explicabo molestias quia voluptates! Molestiae, sapiente enim?</p>
+            </section>
+        </header>
+</body>
+</html>

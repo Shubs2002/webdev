@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {    
+        margin: 2px;
+        padding: 5px;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+    .box{
+        display: none;
+    }
+    /* div {
+
+        border: 2px solid red;
+    } */
+
+    @media (max-width: 500px){
+        #box2{
+            display: block;
+            background-color: aqua;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 800px){
+        #box3{
+            display: block;
+            background-color: black;
+            color: antiquewhite;
+        }
+    }
+    @media (min-width: 801px) and (max-width: 1000px){
+        #box4{
+            display: block;
+            background-color: red;
+
+        }
+    }
+    @media (min-width: 1001px) {
+        #box5{
+            display: block;
+            background: blueviolet;
+        }
+    }
+</style>
+
+<body>
+    <div class="cointainer">
+
+        <div class="box" id="box1">
+            <h1>This is media query</h1>
+        </div>
+        <div class="box" id="box2">
+            <h2>I am a phone</h2>
+        </div>
+        <div class="box" id="box3">
+            <h2>I am a tablet</h2>
+        </div>
+        <div class="box" id="box4">
+            <h2>I am a computer</h2>
+        </div>
+        <div class="box" id="box5">
+            <h2>I am a wide screen computer</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
